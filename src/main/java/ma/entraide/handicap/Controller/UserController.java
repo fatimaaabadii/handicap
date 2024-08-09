@@ -1,9 +1,10 @@
-package ma.entraide.enfance.controller;
+package ma.entraide.handicap.Controller;
 
-import ma.entraide.enfance.entity.AuthRequest;
-import ma.entraide.enfance.entity.UserInfo;
-import ma.entraide.enfance.service.JwtService;
-import ma.entraide.enfance.service.UserInfoService;
+
+import ma.entraide.handicap.Entity.AuthRequest;
+import ma.entraide.handicap.Entity.UserInfo;
+import ma.entraide.handicap.Service.JwtService;
+import ma.entraide.handicap.Service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,8 +1,8 @@
-package ma.entraide.enfance.controller;
+package ma.entraide.handicap.Controller;
 
 
-import ma.entraide.enfance.entity.Region;
-import ma.entraide.enfance.service.RegionService;
+import ma.entraide.handicap.Entity.Region;
+import ma.entraide.handicap.Service.RegionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

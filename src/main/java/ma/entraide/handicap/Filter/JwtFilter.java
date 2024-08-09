@@ -1,11 +1,11 @@
-package ma.entraide.enfance.filter;
+package ma.entraide.handicap.Filter;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import ma.entraide.enfance.service.JwtService;
-import ma.entraide.enfance.service.UserInfoService;
+import ma.entraide.handicap.Service.JwtService;
+import ma.entraide.handicap.Service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;

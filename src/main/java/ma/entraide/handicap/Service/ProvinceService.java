@@ -1,8 +1,8 @@
-package ma.entraide.enfance.service;
+package ma.entraide.handicap.Service;
 
 
-import ma.entraide.enfance.repository.ProvinceRepo;
-import ma.entraide.enfance.entity.Province;
+import ma.entraide.handicap.Entity.Province;
+import ma.entraide.handicap.Repository.ProvinceRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

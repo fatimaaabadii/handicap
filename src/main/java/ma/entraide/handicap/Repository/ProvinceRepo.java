@@ -1,7 +1,7 @@
-package ma.entraide.enfance.repository;
+package ma.entraide.handicap.Repository;
 
 
-import ma.entraide.enfance.entity.Province;
+import ma.entraide.handicap.Entity.Province;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;

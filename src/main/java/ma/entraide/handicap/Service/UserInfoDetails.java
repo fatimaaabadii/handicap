@@ -1,7 +1,7 @@
-package ma.entraide.enfance.service;
+package ma.entraide.handicap.Service;
 
 
-import ma.entraide.enfance.entity.UserInfo;
+import ma.entraide.handicap.Entity.UserInfo;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -16,7 +16,13 @@ public class UserInfoDetails implements UserDetails {
     String password = null;
     List<GrantedAuthority> authorities;
 
-    public UserInfoDetails(UserInfo userInfo){
+    public UserInfoDetails(String userName, String password, List<GrantedAuthority> authorities) {
+		super();
+		this.userName = userName;
+		this.password = password;
+		this.authorities = authorities;
+	}
+	public UserInfoDetails(UserInfo userInfo){
        userName= userInfo.getEmail();
        password= userInfo.getPassword();
        authorities= Arrays.stream(userInfo.getRoles().split(","))

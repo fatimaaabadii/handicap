@@ -1,10 +1,9 @@
-package ma.entraide.enfance.service;
+package ma.entraide.handicap.Service;
 
 
-
-import ma.entraide.enfance.repository.UserInfoRepository;
-import ma.entraide.enfance.entity.Province;
-import ma.entraide.enfance.entity.UserInfo;
+import ma.entraide.handicap.Entity.Province;
+import ma.entraide.handicap.Entity.UserInfo;
+import ma.entraide.handicap.Repository.UserInfoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.rest.webmvc.ResourceNotFoundException;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -20,8 +19,10 @@ import java.util.Optional;
 public class UserInfoService implements UserDetailsService {
     @Autowired
     private UserInfoRepository userInfoRepository;
+
     @Autowired
     private PasswordEncoder passwordEncoder;
+
     @Autowired
     private ProvinceService provinceService;
     @Override

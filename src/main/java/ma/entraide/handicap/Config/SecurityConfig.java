@@ -1,8 +1,8 @@
-package ma.entraide.enfance.config;
+package ma.entraide.handicap.Config;
 
 
-import ma.entraide.enfance.filter.JwtFilter;
-import ma.entraide.enfance.service.UserInfoService;
+import ma.entraide.handicap.Filter.JwtFilter;
+import ma.entraide.handicap.Service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -37,7 +37,7 @@ public class SecurityConfig {
         return httpSecurity.csrf(csrf->csrf.disable())
                 .authorizeHttpRequests(auth->auth
                         .requestMatchers("/auth/welcome","/auth/addUser","/auth/login", "/region/all" ,
-                                "province/region/{id}","province/all")
+                                "province/region/{id}","province/all", "/association/all", "/beneficiaire/all")
                         .permitAll()
                         .anyRequest().authenticated())
                 .sessionManagement(session->session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
